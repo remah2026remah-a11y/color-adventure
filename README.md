@@ -30,13 +30,22 @@ pnpm check
 pnpm build
 ```
 
+لبناء نسخة الموقع الثابتة المناسبة لـ GitHub Pages:
+
+```bash
+pnpm build:pages
+pnpm preview:pages
+```
+
+يوجد سير عمل GitHub Actions في `.github/workflows/deploy-pages.yml`؛ عند تفعيله من إعدادات المستودع، تُبنى اللعبة وتُنشر تلقائياً عند كل دفع إلى فرع `main`.
+
 ## التقنيات
 
 React 19، TypeScript، Vite، Tailwind CSS، Web Speech API للنطق العربي، وWeb Audio API للمؤثرات الصوتية القصيرة.
 
 ## الأصول البصرية
 
-تستخدم اللعبة أصولاً كرتونية أصلية مرفوعة إلى تخزين WebDev Storage، وتُحمّل أثناء تشغيل نسخة WebDev عبر مسارات `/manus-storage/...`. عند نقل المشروع إلى استضافة مستقلة، يجب استبدال هذه المسارات بأصول مستضافة ضمن بيئة الاستضافة الجديدة.
+الأصول الكرتونية الأصلية موجودة داخل `client/public/assets` وتُحمّل عبر `import.meta.env.BASE_URL`، لذلك تعمل اللعبة محلياً وعلى GitHub Pages بدون الاعتماد على WebDev Storage أو أي خدمة خارجية.
 
 ## الحالة الحالية
 

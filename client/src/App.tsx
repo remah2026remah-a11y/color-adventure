@@ -10,9 +10,9 @@ type ColorItem = {
   object: string;
 };
 
-const GUIDE = "/manus-storage/color-adventure-guide_2fd137f6.png";
-const REFERENCE = "/manus-storage/color-adventure-reference_582764a2.png";
-const OBJECT_KIT = "/manus-storage/color-adventure-object-kit_60b1055f.png";
+const GUIDE = `${import.meta.env.BASE_URL}assets/color-adventure-guide.png`;
+const REFERENCE = `${import.meta.env.BASE_URL}assets/color-adventure-reference.png`;
+const OBJECT_KIT = `${import.meta.env.BASE_URL}assets/color-adventure-object-kit.png`;
 
 const colors: ColorItem[] = [
   { name: "الأحمر", hex: "#F0444F", soft: "#FFE5E7", emoji: "🔴", object: "🍎" },

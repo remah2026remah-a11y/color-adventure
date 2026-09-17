@@ -4,6 +4,6 @@
 
 | Name | Description | Size | Storage Path |
 |------|-------------|------|--------------|
-| color-adventure-reference | مرجع لقطة لعبة يوضح تكوين الشاشة والبطاقات | 16:9 / 2560x1440 | `/manus-storage/color-adventure-reference_582764a2.png` |
-| color-adventure-guide | لولو القطة المرشدة بخلفية شفافة | 105–360px display | `/manus-storage/color-adventure-guide_2fd137f6.png` |
-| color-adventure-object-kit | مجموعة تفاحة ونجمة وكرة وورقة وطائرة ورقية وقلب | 2304x1536 source | `/manus-storage/color-adventure-object-kit_60b1055f.png` |
+| color-adventure-reference | مرجع لقطة لعبة يوضح تكوين الشاشة والبطاقات | 16:9 / 2560x1440 | `client/public/assets/color-adventure-reference.png` |
+| color-adventure-guide | لولو القطة المرشدة بخلفية شفافة | 105–360px display | `client/public/assets/color-adventure-guide.png` |
+| color-adventure-object-kit | مجموعة تفاحة ونجمة وكرة وورقة وطائرة ورقية وقلب | 2304x1536 source | `client/public/assets/color-adventure-object-kit.png` |
